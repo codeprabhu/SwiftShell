@@ -1,0 +1,59 @@
+SWIFTSHELL V1 TIMELINE
+
+DAY 1 - Shell Fundamentals
+[ ] Architecture Review
+[ ] Command Loop
+[ ] Input Reader
+[ ] Command Parser
+[ ] fork()
+[ ] execvp()
+[ ] wait()
+[ ] help command
+[ ] exit command
+[ ] hello plugin
+
+DAY 2 - Plugin Architecture
+[ ] Plugin Interface
+[ ] Plugin Registry
+[ ] Plugin Discovery
+[ ] Plugin Dispatch
+[ ] plugins command
+[ ] Refactor help command
+
+DAY 3 - Persistence
+[ ] Notes Plugin
+[ ] Save Notes
+[ ] Load Notes
+[ ] Remove Notes
+[ ] JSON Storage
+
+DAY 4 - Linux Internals
+[ ] TaskMgr Plugin
+[ ] CPU Usage
+[ ] RAM Usage
+[ ] Disk Usage
+[ ] Process Listing
+
+DAY 5 - Networking
+[ ] GitHub Plugin
+[ ] HTTP Requests
+[ ] JSON Parsing
+[ ] User Lookup
+[ ] Repository Lookup
+
+DAY 6 - AI Integration
+[ ] Ollama Setup
+[ ] AI Plugin
+[ ] ask command
+[ ] summarize command
+[ ] explain command
+
+DAY 7 - Product Layer
+[ ] Dashboard
+[ ] Theme Engine
+[ ] Matrix Theme
+[ ] Cyberpunk Theme
+[ ] README
+[ ] Screenshots
+[ ] Demo GIF
+[ ] Architecture Diagram
