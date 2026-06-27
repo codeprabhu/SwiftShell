@@ -4,7 +4,15 @@
 
 void hello_execute(int argc, char** argv)
 {
-    printf("Hello from SwiftShell Plugin Sysetm\n");
+    if(argc == 1)
+    {
+        printf("Hello from SwiftShell\n");
+        return;
+    }
+    printf("Hello ");
+    for(int i = 1; i < argc; i++)
+        printf("%s ", argv[i]);
+    printf("\n");
 }
 
 Plugin helloPlugin = {

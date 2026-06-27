@@ -6,7 +6,12 @@ SRC = \
 	src/main.c \
 	src/shell.c \
 	src/plugin_manager.c \
-	plugins/hello_plugin.c
+	src/parser.c \
+	src/dispatcher.c \
+	src/executor.c\
+	plugins/plugin_loader.c \
+	plugins/hello_plugin.c \
+	plugins/notes_plugin.c
 
 TARGET = swift
 

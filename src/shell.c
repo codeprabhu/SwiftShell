@@ -3,13 +3,15 @@
 
 #include "../include/shell.h"
 #include "../include/plugin_manager.h"
-#include "../plugins/hello_plugin.h"
+#include "../include/parser.h"
+#include "../include/dispatcher.h"
 
+#include "../plugins/plugin_loader.h"
 void startShell()
 {
     char input[1024];
     
-    registerPlugin(&helloPlugin);
+    loadPlugins();
 
     while(1)
     {
@@ -18,23 +20,12 @@ void startShell()
         break;
 
         input[strcspn(input, "\n")] = '\0';
-        if(strcmp(input, "exit") == 0)
-            break;
 
-        if(strcmp(input, "plugins") == 0)
-        {
-            listPlugins();
-            continue;
-        }
-
-        Plugin* plugin = findPlugin(input);
-        if(plugin)
-        {
-            plugin->execute(0,NULL);
-            continue;
-        }
+        ParsedCommand cmd = parseInput(input);
         
-        printf("Unknown Command: %s\n", input);
+        dispatchCommand(&cmd);
+        
+        freeParsedCommand(&cmd);
 
     }
     
