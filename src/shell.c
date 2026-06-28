@@ -3,15 +3,20 @@
 
 #include "../include/shell.h"
 #include "../include/plugin_manager.h"
+#include "../include/app_manager.h"
+
 #include "../include/parser.h"
 #include "../include/dispatcher.h"
 
 #include "../plugins/plugin_loader.h"
+#include "../apps/app_loader.h"
+
 void startShell()
 {
     char input[1024];
     
     loadPlugins();
+    loadApps();
 
     while(1)
     {

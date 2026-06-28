@@ -3,6 +3,7 @@
 
 #include "../include/dispatcher.h"
 #include "../include/plugin_manager.h"
+#include "../include/app_manager.h"
 #include "../include/executor.h"
 
 void dispatchCommand(ParsedCommand* cmd)
@@ -22,5 +23,13 @@ void dispatchCommand(ParsedCommand* cmd)
         plugin->execute(cmd->argc, cmd->argv);
         return;
     }
+
+    App* app = findApp(cmd->argv[0]);
+    if(app)
+    {
+        app-> run();
+        return;
+    }
+    
     executeExternal(cmd);
 }

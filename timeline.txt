@@ -1,30 +1,30 @@
 SWIFTSHELL V1 TIMELINE
 
 DAY 1 - Shell Fundamentals
-[ ] Architecture Review
-[ ] Command Loop
-[ ] Input Reader
-[ ] Command Parser
-[ ] fork()
-[ ] execvp()
-[ ] wait()
+[x] Architecture Review
+[x] Command Loop
+[x] Input Reader
+[x] Command Parser
+[x] fork()
+[x] execvp()
+[x] wait()
 [ ] help command
-[ ] exit command
-[ ] hello plugin
+[x] exit command
+[x] hello plugin
 
 DAY 2 - Plugin Architecture
-[ ] Plugin Interface
-[ ] Plugin Registry
-[ ] Plugin Discovery
-[ ] Plugin Dispatch
-[ ] plugins command
+[x] Plugin Interface
+[x] Plugin Registry
+[x] Plugin Discovery
+[x] Plugin Dispatch
+[x] plugins command
 [ ] Refactor help command
 
 DAY 3 - Persistence
-[ ] Notes Plugin
-[ ] Save Notes
-[ ] Load Notes
-[ ] Remove Notes
+[x] Notes Plugin
+[x] Save Notes
+[x] Load Notes
+[x] Remove Notes
 [ ] JSON Storage
 
 DAY 4 - Linux Internals
