@@ -28,11 +28,11 @@ DAY 3 - Persistence
 [ ] JSON Storage
 
 DAY 4 - Linux Internals
-[ ] TaskMgr Plugin
-[ ] CPU Usage
-[ ] RAM Usage
-[ ] Disk Usage
-[ ] Process Listing
+[x] TaskMgr Plugin
+[x] CPU Usage
+[x] RAM Usage
+[x] Disk Usage
+[x] Process Listing
 
 DAY 5 - Networking
 [ ] GitHub Plugin
@@ -42,9 +42,9 @@ DAY 5 - Networking
 [ ] Repository Lookup
 
 DAY 6 - AI Integration
-[ ] Ollama Setup
-[ ] AI Plugin
-[ ] ask command
+[x] Ollama Setup
+[x] AI Plugin
+[x] ask command
 [ ] summarize command
 [ ] explain command
 

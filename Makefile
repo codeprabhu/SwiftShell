@@ -25,7 +25,9 @@ SRC = \
 	apps/swifTop/terminal/terminal.c \
 	plugins/plugin_loader.c \
 	plugins/hello_plugin.c \
-	plugins/notes_plugin.c 
+	plugins/notes_plugin.c \
+	plugins/ask_plugin.c \
+	src/services/ai/ai.c
 	
 
 TARGET = swift
