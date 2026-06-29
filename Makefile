@@ -14,9 +14,15 @@ SRC = \
 	apps/app_loader.c \
 	apps/swifTop/swifTop_app.c \
 	apps/swifTop/metrics/metrics.c \
-	apps/swifTop/models/system_stats.c \
+	apps/swifTop/metrics/cpu.c \
+	apps/swifTop/metrics/memory.c \
+	apps/swifTop/metrics/threads.c \
+	apps/swifTop/metrics/disk.c \
+	apps/swifTop/metrics/process.c \
+ 	apps/swifTop/models/system_stats.c \
 	apps/swifTop/history/history.c \
 	apps/swifTop/widgets/graph.c \
+	apps/swifTop/terminal/terminal.c \
 	plugins/plugin_loader.c \
 	plugins/hello_plugin.c \
 	plugins/notes_plugin.c 

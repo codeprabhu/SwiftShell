@@ -1,10 +1,11 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-void drawLineGraph(
-    float history[],
-    int size,
-    float maxValue
+#include "../history/history.h"
+
+int drawLineGraph(
+    History* history,
+    float values[]
 );
 
 #endif

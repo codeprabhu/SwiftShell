@@ -1,13 +1,15 @@
 #include "metrics.h"
+#include "cpu.h"
+#include "memory.h"
+#include "threads.h"
+#include "disk.h"
+#include "process.h"
 
 void collectMetrics(SystemStats* stats)
 {
-    stats->cpuUsage = 42;
-    stats->ramUsage = 63;
-
-    stats->diskUsage = 31;
-
-    stats->processCount = 286;
-
-    stats->threadCount = 1843;
+    stats->cpuUsage = getCPUUsage();
+    stats->ramUsage = getRAMUsage();
+    stats->diskUsage = getDiskUsage();
+    stats->processCount = getProcessCount();
+    stats->threadCount = getThreadCount();
 }
