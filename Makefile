@@ -38,7 +38,10 @@ PLUGINS = \
 	plugins/github/github_parser.c \
 	plugins/github/github_service.c \
 	plugins/github/github_formatter.c \
-	plugins/github/models/github_user.c 
+	plugins/github/models/github_user.c \
+	plugins/github/models/github_repo.c \
+	plugins/github/models/github_issues.c \
+	plugins/github/models/github_release.c
 	
 SRC = \
 	$(APPS) \
