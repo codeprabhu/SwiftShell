@@ -1,12 +1,14 @@
 #include "../include/plugin_manager.h"
 
-#include "hello_plugin.h"
-#include "notes_plugin.h"
-#include "ask_plugin.h"
+#include "hello/hello_plugin.h"
+#include "notes/notes_plugin.h"
+#include "ask/ask_plugin.h"
+#include "github/github_plugin.h"
 
 void loadPlugins()
 {
     registerPlugin(&helloPlugin);
     registerPlugin(&notesPlugin);
     registerPlugin(&askPlugin);
+    registerPlugin(&githubPlugin);
 }

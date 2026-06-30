@@ -20,9 +20,9 @@ int getThreadCount()
         if(!isdigit(entry->d_name[0]))
             continue;
 
-        char path[256];
+        char path[512];
 
-        sprintf(path,
+        snprintf(path, sizeof(path),
                 "/proc/%s/status",
                 entry->d_name);
 

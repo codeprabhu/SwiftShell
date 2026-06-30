@@ -1,18 +1,12 @@
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Iinclude
+LDFLAGS = -lcjson
 
-SRC = \
-	src/main.c \
-	src/shell.c \
-	src/plugin_manager.c \
-	src/parser.c \
-	src/dispatcher.c \
-	src/executor.c\
-	src/app_manager.c \
-	apps/dashboard/dashboard.c \
+APPS = \
 	apps/app_loader.c \
 	apps/swifTop/swifTop_app.c \
+	apps/swifTop/dashboard/dashboard.c \
 	apps/swifTop/metrics/metrics.c \
 	apps/swifTop/metrics/cpu.c \
 	apps/swifTop/metrics/memory.c \
@@ -22,18 +16,39 @@ SRC = \
  	apps/swifTop/models/system_stats.c \
 	apps/swifTop/history/history.c \
 	apps/swifTop/widgets/graph.c \
-	apps/swifTop/terminal/terminal.c \
+	apps/swifTop/terminal/terminal.c 
+
+FRAMEWORK = \
+	src/main.c \
+	src/shell.c \
+	src/plugin_manager.c \
+	src/parser.c \
+	src/dispatcher.c \
+	src/executor.c\
+	src/app_manager.c \
+	src/services/ai/ai.c \
+	src/services/http/http.c
+
+PLUGINS = \
 	plugins/plugin_loader.c \
-	plugins/hello_plugin.c \
-	plugins/notes_plugin.c \
-	plugins/ask_plugin.c \
-	src/services/ai/ai.c
+	plugins/hello/hello_plugin.c \
+	plugins/notes/notes_plugin.c \
+	plugins/ask/ask_plugin.c \
+	plugins/github/github_plugin.c \
+	plugins/github/github_parser.c \
+	plugins/github/github_service.c \
+	plugins/github/github_formatter.c \
+	plugins/github/models/github_user.c 
 	
+SRC = \
+	$(APPS) \
+	$(FRAMEWORK) \
+	$(PLUGINS)
 
 TARGET = swift
 
 all:
-	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET) $(LDFLAGS)
 
 run: all
 	./$(TARGET)

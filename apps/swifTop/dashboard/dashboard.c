@@ -3,11 +3,11 @@
 
 #include "dashboard.h"
 
-#include "../swifTop/models/system_stats.h"
-#include "../swifTop/metrics/metrics.h"
-#include "../swifTop/history/history.h"
-#include "../swifTop/widgets/graph.h"
-#include "../swifTop/terminal/terminal.h"
+#include "../models/system_stats.h"
+#include "../metrics/metrics.h"
+#include "../history/history.h"
+#include "../widgets/graph.h"
+#include "../terminal/terminal.h"
 
 #define GRAPH_WIDTH HISTORY_SIZE
 #define WIDTH (GRAPH_WIDTH + 3)

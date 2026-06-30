@@ -35,10 +35,10 @@ DAY 4 - Linux Internals
 [x] Process Listing
 
 DAY 5 - Networking
-[ ] GitHub Plugin
-[ ] HTTP Requests
-[ ] JSON Parsing
-[ ] User Lookup
+[x] GitHub Plugin
+[x] HTTP Requests
+[x] JSON Parsing
+[x] User Lookup
 [ ] Repository Lookup
 
 DAY 6 - AI Integration
