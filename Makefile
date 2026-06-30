@@ -41,7 +41,12 @@ PLUGINS = \
 	plugins/github/models/github_user.c \
 	plugins/github/models/github_repo.c \
 	plugins/github/models/github_issues.c \
-	plugins/github/models/github_release.c
+	plugins/github/models/github_release.c \
+	plugins/weather/weather_formatter.c \
+	plugins/weather/weather_parser.c \
+	plugins/weather/weather_plugin.c \
+	plugins/weather/weather_service.c \
+	plugins/weather/weather_model.c
 	
 SRC = \
 	$(APPS) \
