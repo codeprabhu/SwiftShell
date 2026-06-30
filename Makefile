@@ -1,7 +1,7 @@
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Iinclude
-LDFLAGS = -lcjson
+LDFLAGS = -lcjson -lm
 
 APPS = \
 	apps/app_loader.c \
@@ -46,7 +46,14 @@ PLUGINS = \
 	plugins/weather/weather_parser.c \
 	plugins/weather/weather_plugin.c \
 	plugins/weather/weather_service.c \
-	plugins/weather/weather_model.c
+	plugins/weather/weather_model.c \
+	plugins/ascii/ascii_formatter.c \
+	plugins/ascii/ascii_service.c \
+	plugins/ascii/ascii_plugin.c \
+	plugins/ascii/ascii_convert.c \
+	plugins/ascii/ascii_image.c \
+	plugins/ascii/ascii_resize.c \
+	plugins/ascii/stb_image.c
 	
 SRC = \
 	$(APPS) \

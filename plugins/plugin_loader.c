@@ -5,6 +5,7 @@
 #include "ask/ask_plugin.h"
 #include "github/github_plugin.h"
 #include "weather/weather_plugin.h"
+#include "ascii/ascii_plugin.h"
 
 void loadPlugins()
 {
@@ -13,4 +14,5 @@ void loadPlugins()
     registerPlugin(&askPlugin);
     registerPlugin(&githubPlugin);
     registerPlugin(&weatherPlugin);
+    registerPlugin(&asciiPlugin);
 }
