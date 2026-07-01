@@ -11,7 +11,7 @@ static void ascii_execute(int argc, char** argv)
         return;
     }
 
-    if(asciiImage(argv[1]) != 0)
+    if(asciiImage(argv[1],0) != 0)
         printf("Failed to generate ASCII art.\n");
 }
 

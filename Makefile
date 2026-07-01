@@ -16,7 +16,11 @@ APPS = \
  	apps/swifTop/models/system_stats.c \
 	apps/swifTop/history/history.c \
 	apps/swifTop/widgets/graph.c \
-	apps/swifTop/terminal/terminal.c 
+	apps/swifTop/terminal/terminal.c \
+	apps/spotify/dashboard/dashboard.c \
+	apps/spotify/models/spotify_track.c \
+	apps/spotify/services/spotify_service.c \
+	apps/spotify/spotify_app.c
 
 FRAMEWORK = \
 	src/main.c \

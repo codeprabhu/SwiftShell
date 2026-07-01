@@ -13,12 +13,13 @@ int getTerminalWidth()
     ioctl(STDOUT_FILENO,TIOCGWINSZ,&ws);
     return ws.ws_col;
 }
-int asciiImage(const char* filename)
+int asciiImage(const char* filename, int width)
 {
     Image image;
     if(loadImage(filename, &image) != 0)
         return -1;
-    int width = getTerminalWidth() - 4;
+    if(width <= 0)
+        width = getTerminalWidth() - 4;
     Image resized = {0};
     resized = resizeImage(&image,width);
     char* ascii = convertImageToAscii(&resized);

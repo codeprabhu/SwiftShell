@@ -1,13 +1,13 @@
 #include <stdlib.h>
 
 #include "ascii_resize.h"
-
+#define ASPECT_RATIO 0.5f
 Image resizeImage(Image* image,int newWidth)
 {
     Image resized;
     float scale = (float)newWidth / image->width;
     resized.width = newWidth;
-    resized.height = image->height * scale * 0.55f;
+    resized.height = image->height * scale * ASPECT_RATIO;
     resized.channels = 3;
     resized.pixels =malloc(resized.width * resized.height *3);
 
@@ -16,7 +16,7 @@ Image resizeImage(Image* image,int newWidth)
         for(int x = 0; x < resized.width; x++)
         {
             int srcX = x / scale;
-            int srcY = y / (scale * 0.55f);
+            int srcY = y / (scale * ASPECT_RATIO);
             if(srcX >= image->width)
                 srcX = image->width - 1;
             if(srcY >= image->height)

@@ -129,7 +129,7 @@ void startDashboard()
         collectMetrics(&stats);
         addSample(&history, &stats);
         renderDashboard(&stats, &history);
-        sleep(1);
+        usleep(100000);
     }
 
     disableRawMode();
