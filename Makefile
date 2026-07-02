@@ -39,7 +39,10 @@ FRAMEWORK = \
 
 PLUGINS = \
 	plugins/plugin_loader.c \
-	plugins/hello/hello_plugin.c \
+	plugins/swiftsays/swiftsays_plugin.c \
+	plugins/swiftsays/animals/animals.c \
+	plugins/swiftsays/formatter/formatter.c \
+	plugins/swiftsays/services/swiftsays_service.c \
 	plugins/notes/notes_plugin.c \
 	plugins/ask/ask_plugin.c \
 	plugins/github/github_plugin.c \
