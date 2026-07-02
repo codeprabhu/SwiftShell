@@ -39,7 +39,7 @@ DAY 5 - Networking
 [x] HTTP Requests
 [x] JSON Parsing
 [x] User Lookup
-[ ] Repository Lookup
+[x] Repository Lookup
 
 DAY 6 - AI Integration
 [x] Ollama Setup

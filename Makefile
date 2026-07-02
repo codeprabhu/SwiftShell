@@ -20,7 +20,11 @@ APPS = \
 	apps/spotify/dashboard/dashboard.c \
 	apps/spotify/models/spotify_track.c \
 	apps/spotify/services/spotify_service.c \
-	apps/spotify/spotify_app.c
+	apps/spotify/spotify_app.c \
+	apps/clock/clock_app.c \
+	apps/clock/dashboard/dashboard.c \
+	apps/calendar/calendar_app.c \
+	apps/calendar/dashboard/dashboard.c
 
 FRAMEWORK = \
 	src/main.c \
