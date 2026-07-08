@@ -6,6 +6,7 @@
 #include "github/github_plugin.h"
 #include "weather/weather_plugin.h"
 #include "ascii/ascii_plugin.h"
+#include "dvd/dvd_plugin.h"
 
 void loadPlugins()
 {
@@ -15,4 +16,5 @@ void loadPlugins()
     registerPlugin(&githubPlugin);
     registerPlugin(&weatherPlugin);
     registerPlugin(&asciiPlugin);
+    registerPlugin(&dvdPlugin);
 }

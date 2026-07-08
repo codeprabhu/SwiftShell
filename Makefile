@@ -69,6 +69,8 @@ PLUGINS = \
 	plugins/ascii/ascii_image.c \
 	plugins/ascii/ascii_resize.c \
 	plugins/ascii/stb_image.c \
+	plugins/dvd/dashboard/dashboard.c \
+	plugins/dvd/dvd_plugin.c
 	
 SRC = \
 	$(APPS) \
