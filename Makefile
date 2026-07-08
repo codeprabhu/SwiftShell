@@ -64,7 +64,7 @@ PLUGINS = \
 	plugins/ascii/ascii_convert.c \
 	plugins/ascii/ascii_image.c \
 	plugins/ascii/ascii_resize.c \
-	plugins/ascii/stb_image.c
+	plugins/ascii/stb_image.c \
 	
 SRC = \
 	$(APPS) \
