@@ -24,7 +24,11 @@ APPS = \
 	apps/clock/clock_app.c \
 	apps/clock/dashboard/dashboard.c \
 	apps/calendar/calendar_app.c \
-	apps/calendar/dashboard/dashboard.c
+	apps/calendar/dashboard/dashboard.c \
+	apps/explorer/dashboard/dashboard.c \
+	apps/explorer/services/file_service.c \
+	apps/explorer/models/file_entry.c \
+	apps/explorer/explorer_app.c
 
 FRAMEWORK = \
 	src/main.c \
