@@ -71,7 +71,9 @@ PLUGINS = \
 	plugins/ascii/stb_image.c \
 	plugins/dvd/dashboard/dashboard.c \
 	plugins/dvd/dvd_plugin.c \
-	plugins/neofetch/neofetch_plugin.c
+	plugins/neofetch/neofetch_plugin.c \
+	plugins/music/music_plugin.c \
+	plugins/music/dashboard/dashboard.c 
 	
 SRC = \
 	$(APPS) \

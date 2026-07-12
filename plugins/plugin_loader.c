@@ -8,6 +8,7 @@
 #include "ascii/ascii_plugin.h"
 #include "dvd/dvd_plugin.h"
 #include "neofetch/neofetch_plugin.h"
+#include "music/music_plugin.h"
 
 void loadPlugins()
 {
@@ -19,4 +20,5 @@ void loadPlugins()
     registerPlugin(&asciiPlugin);
     registerPlugin(&dvdPlugin);
     registerPlugin(&neofetchPlugin);
+    registerPlugin(&musicPlugin);
 }
