@@ -7,6 +7,7 @@
 #include "weather/weather_plugin.h"
 #include "ascii/ascii_plugin.h"
 #include "dvd/dvd_plugin.h"
+#include "neofetch/neofetch_plugin.h"
 
 void loadPlugins()
 {
@@ -17,4 +18,5 @@ void loadPlugins()
     registerPlugin(&weatherPlugin);
     registerPlugin(&asciiPlugin);
     registerPlugin(&dvdPlugin);
+    registerPlugin(&neofetchPlugin);
 }
